@@ -1,6 +1,6 @@
-//데이터 부분
 import React from 'react';
 import HomePresenter from './HomePresenter';
+import { movieApi } from 'api';
 
 export default class extends React.Component {
     state = {
@@ -10,6 +10,30 @@ export default class extends React.Component {
         error: null,
         loading: true
     };
+
+    async componentDidMount() {
+        try {
+            const { data: { results: nowPlaying } } = await movieApi.nowPlaying();
+            const { data: { results: upcoming } } = await movieApi.upcoming();
+            const { data: { results: popular } } = await movieApi.popular();
+            this.setState({
+                nowPlaying,
+                upcoming,
+                popular
+            });
+
+        } catch (error) {
+            this.setState({
+                error: "can't find movies information"
+            })
+
+        } finally {
+            this.setState({
+                loading: false
+            });
+
+        }
+    }
 
 
     render() {
@@ -21,6 +45,6 @@ export default class extends React.Component {
                 popular={popular}
                 error={error}
                 loading={loading} />
-        )
+        );
     }
 }
