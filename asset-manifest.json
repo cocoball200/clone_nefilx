@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/nomflix/static/js/main.70b01f74.chunk.js",
+    "main.js.map": "/nomflix/static/js/main.70b01f74.chunk.js.map",
+    "runtime-main.js": "/nomflix/static/js/runtime-main.3d0dc9c1.js",
+    "runtime-main.js.map": "/nomflix/static/js/runtime-main.3d0dc9c1.js.map",
+    "static/js/2.aaabd205.chunk.js": "/nomflix/static/js/2.aaabd205.chunk.js",
+    "static/js/2.aaabd205.chunk.js.map": "/nomflix/static/js/2.aaabd205.chunk.js.map",
+    "index.html": "/nomflix/index.html",
+    "static/js/2.aaabd205.chunk.js.LICENSE.txt": "/nomflix/static/js/2.aaabd205.chunk.js.LICENSE.txt",
+    "static/media/Mia_logo.png": "/nomflix/static/media/Mia_logo.0cfbc72b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d0dc9c1.js",
+    "static/js/2.aaabd205.chunk.js",
+    "static/js/main.70b01f74.chunk.js"
+  ]
+}
