@@ -22,10 +22,10 @@ export default class extends React.Component {
                 popular
             });
 
-        } catch (error) {
+        } catch {
             this.setState({
                 error: "can't find movies information"
-            })
+            });
 
         } finally {
             this.setState({
@@ -44,7 +44,8 @@ export default class extends React.Component {
                 upcoming={upcoming}
                 popular={popular}
                 error={error}
-                loading={loading} />
+                loading={loading}
+            />
         );
     }
 }
