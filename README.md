@@ -1,8 +1,3 @@
 # Nomflix 
-This is a movie app like Netflix. 
-React is a main tech to make this app. 
-I attended NomardCoder Course to make this app! 
-
-# TO DO list
-[] change style 
-[] change function
+노마드코더에서 제공하는 코스를 따라 코드를 작성하였습니다.
+React를 구현하였고, 영화 데이터 Api를 가져다가 데이터를 사용하였습니다. 
